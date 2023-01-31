@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+  width: 80vw;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #b1dbf4;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #666c70;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+.nameContainer {
+  display: flex;
+}
+
+.moreAdrees {
+  display: flex;
+}
+
+#lastname,
+#lastname {
+  margin-left: 20px;
+}
+
+#City {
+  margin-right: 20px;
+}
+
+.doc {
+  margin: 20px;
+}
+
+.required {
+  color: red;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+/* Add this media query to make the form responsive */
+@media screen and (max-width: 600px) {
+  .form-container {
+      width: 90%; /* Reduce the width of the form container */
+      padding: 20px; /* Add padding for smaller screens */
+  }
+  input[type="text"], input[type="email"], input[type="date"], input[type="number"] {
+      width: 100%; /* Make all inputs full width for smaller screens */
+  }
+  .myNameContainer, .adressContainer {
+      display: flex;
+      flex-direction: column; /* Stack the input fields vertically for smaller screens */
+      width: 100%;
+  }
+  .moreAdrees {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Space the city and country inputs evenly */
+      width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .form-container {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .myNameContainer, label, select, input[type="text"], input[type="number"], input[type="submit"] {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}

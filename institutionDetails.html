@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Registration Form</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <link type="image/png" sizes="120x120" rel="icon"
+        href="https://img.icons8.com/ios-glyphs/30/null/business-contact.png">
+</head>
+
+<body>
+    <!-- Container for form -->
+    <div class="container">
+        <!-- Form Container -->
+        <div class="form-container">
+            <!-- Form to submit data to UploadDocument.html page -->
+            <form action="./UploadDocument.html">
+                <!-- Container for HSC Institution Name field -->
+                <div class="myNameContainer">
+                    <label for="HSCInstitutionName">HSC Institution Name:<span class="required">*</span></label>
+                    <div class="nameContainer">
+                        <!-- Input field for HSC Institution Name -->
+                        <input type="text" id="HSCInstitutionName" name="HSCInstitutionName"
+                            placeholder="Institution Name" required>
+                    </div>
+                </div>
+                <!-- Select field for HSC Board -->
+                <label for="HSCBoard">HSC Board:<span class="required">*</span></label>
+                <select name="HSCBoard" id="HSCBoard" required>
+                    <!-- Options for HSC Board -->
+                    <option value="Select">Select</option>
+                    <option value="CBSC">CBSC</option>
+                    <option value="ICSC">ICSC</option>
+                    <option value="State Board">State Board</option>
+                </select>
+
+                <!-- Label and input field for HSC Score -->
+                <label for="ScoreInHsc">Score In Hsc:<span class="required">*</span></label>
+                <input type="text" id="ScoreInHsc" name="ScoreInHsc" required placeholder="Percentage %">
+
+                <!-- Container for SSC Institution Name field -->
+                <div class="myNameContainer">
+                    <label for="SSC Institution Name">SSC Institution Name:<span class="required">*</span></label>
+                    <div class="nameContainer">
+                        <!-- Input field for SSC Institution Name -->
+                        <input type="text" id="SSCInstitutionName" required name="SSCInstitutionName"
+                            placeholder="SSC Institution Name">
+                    </div>
+                </div>
+
+                <!-- Select field for SSC Board -->
+                <label for=">SSC Board">SSC Board:<span class="required">*</span></label>
+                <select name="SSCBoard" id="SSC Board" required required>
+                    <!-- Options for SSC Board -->
+                    <option value="Select">Select</option>
+                    <option value="SSC Board">SSC Board</option>
+                    <option value="ICSC">ICSC</option>
+                    <option value="CBSC">CBSC</option>
+                    <option value="State Board">State Board</option>
+                </select>
+
+                <!-- Label and input field for SSC Score -->
+                <label for="ScoreInHsc">Score In Hsc:<span class="required">*</span></label>
+                <input type="text" id="ScoreInHsc" name="ScoreInHsc" required placeholder="Percentage %">
+
+                <!-- Currently Pursuing -->
+                <div class="myNameContainer">
+                    <label for="Currently Pursuing">Currently Pursuing:<span class="required">*</span></label>
+                    <div class="nameContainer">
+                        <input type="text" id="CurrentlyPursuing" required name="CurrentlyPursuing"
+                            placeholder="Currently Pursuing">
+                    </div>
+                </div>
+                <!-- Institution Name -->
+                <div class="myNameContainer">
+                    <label for="InstitutionName">Institution Name:<span class="required">*</span></label>
+                    <div class="nameContainer">
+                        <input type="text" id="InstitutionName" required name="InstitutionName" placeholder="Institution Name">
+                    </div>
+                </div>
+                <!-- Institution Name -->
+                <div>
+                    <label for="OAP">Over All Percentage:<span class="required">*</span></label>
+                    <input type="text" id="email" name="email" required placeholder="%">
+                </div>
+                <div>
+                    <label for="CB">Current Backlogs :<span class="required">*</span></label>
+                    <input type="number" id="Nationality" name="Nationality" required placeholder="0">
+                    <input type="submit" value="Next">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- JavaScript File Link Here -->
+    <script src="institutionDetails.js"></script>
+</body>
+
+</html>
